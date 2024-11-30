@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
+
+ul,li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+img{
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}

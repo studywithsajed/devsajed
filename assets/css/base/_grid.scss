@@ -1,0 +1,108 @@
+
+
+.container{
+    margin: auto;
+    width: 100%;
+    padding: 0 15px;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        justify-content: space-between;
+    }
+}
+
+$columns: 12;
+$grid_breakpoint_xxl: 1400px;
+$grid_breakpoint_xl: 1200px;
+$grid_breakpoint_lg: 992px;
+$grid_breakpoint_md: 768px;
+$grid_breakpoint_sm: 576px;
+$grid_breakpoint_xs: 575.98px;
+
+
+@media (max-width: $grid_breakpoint_xs) {
+  .container {
+    max-width: 100%;
+  }
+  
+
+  @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: (100/12) * $i * 1%;
+            padding: 0 15px ;
+            text-align: center;
+        }
+    }
+    
+
+}
+
+
+@media (min-width: $grid_breakpoint_sm) {
+  .container {
+    max-width: 540px;
+  }
+  
+  
+  @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            width: (100/12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+    
+}
+
+@media (min-width: $grid_breakpoint_md) {
+  .container {
+    max-width: 720px;
+  }
+
+  @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            width: (100/12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+    
+}
+
+@media (min-width: $grid_breakpoint_lg) {
+  .container {
+    max-width: 960px;
+  }
+
+  @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            width: (100/12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (min-width: $grid_breakpoint_xl) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+            width: (100/12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (min-width: $grid_breakpoint_xxl) {
+  .container {
+     max-width: 1320px;
+  }
+
+  @for $i from 1 through 12 {
+        .col-xxl-#{$i} {
+            width: (100/12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}

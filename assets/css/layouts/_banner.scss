@@ -1,0 +1,84 @@
+.banner-area {
+  position: relative;
+  inset: 0;
+  z-index: 2;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  .banner-content {
+    padding: 0 20px;
+    a {
+      display: inline-block;
+      background: #fff;
+      padding: 5px 8px;
+      margin: 24px 0 0;
+      border-radius: 9px;
+      color: #000;
+      font-weight: 600;
+      border: 2px solid transparent;
+      &:hover{
+        background: transparent;
+      border: 2px solid #fff;
+        color: #fff;
+      }
+    }
+    h1 {
+      font-size: 64px;
+      line-height: 76px;
+      color: #fff;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    p {
+      font-size: 26px;
+      color: #fff;
+      font-weight: 600;
+
+      span {
+        border-bottom: 1px solid #149ddd;
+        padding: 5px 11px;
+      }
+    }
+  }
+}
+
+// Typewriter Effect
+#typewriter-text {
+  display: inline-block;
+  font-weight: bold;
+
+  &::after {
+    content: "|";
+    animation: blink 0.7s step-end infinite;
+  }
+}
+
+// Blink Animation for Cursor
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+// Colors for each role
+.typewriter-role {
+  &.developer {
+    color: #28a745; // Green color for "Web Developer"
+  }
+
+  &.designer {
+    color: #87cefa; // Sky blue color for "Web Designer"
+  }
+
+  &.ux-designer {
+    color: #e74c3c; // Red color for "UI/UX Designer"
+  }
+}
