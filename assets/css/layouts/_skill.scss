@@ -1,0 +1,24 @@
+.skill-area {
+  .section-title {
+    h4 {
+      font-size: $font-size-heading;
+      line-height: $line-height-heading;
+      font-weight: $font-weight-bold;
+      color: $text-color;
+      padding-bottom: 15px;
+    }
+
+    p {
+      color: $text-color;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;
+    }
+
+    .divider {
+      background: $primary-color;
+      width: 50px;
+      height: 3px;
+    }
+  }
+}

@@ -7,7 +7,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: $text-color;
     opacity: 0.5;
     z-index: -1;
   }
@@ -15,38 +15,56 @@
     padding: 0 20px;
     a {
       display: inline-block;
-      background: #fff;
+      background: $section-background;
       padding: 5px 8px;
       margin: 24px 0 0;
       border-radius: 9px;
-      color: #000;
+      color: $text-color;
       font-weight: 600;
       border: 2px solid transparent;
-      &:hover{
+      &:hover {
         background: transparent;
-      border: 2px solid #fff;
-        color: #fff;
+        border: 2px solid $section-background;
+        color: $section-background;
+      }
+      @include small {
+        padding: 0px 3px;
+        font-size: 13px;
       }
     }
     h1 {
       font-size: 64px;
       line-height: 76px;
-      color: #fff;
+      color: $section-background;
       text-transform: capitalize;
       margin-bottom: 20px;
       font-style: italic;
+      @include small {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 3px;
+      }
     }
 
     p {
       font-size: 26px;
-      color: #fff;
+      color: $section-background;
       font-weight: 600;
 
       span {
-        border-bottom: 1px solid #149ddd;
+        border-bottom: 1px solid $primary-color;
         padding: 5px 11px;
       }
+      @include small {
+        font-size: 16px;
+      }
     }
+  }
+  @include small {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
   }
 }
 
@@ -71,14 +89,14 @@
 // Colors for each role
 .typewriter-role {
   &.developer {
-    color: #28a745; // Green color for "Web Developer"
+    color: $success-color; // Green color for "Web Developer"
   }
 
   &.designer {
-    color: #87cefa; // Sky blue color for "Web Designer"
+    color: $info-color; // Sky blue color for "Web Designer"
   }
 
   &.ux-designer {
-    color: #e74c3c; // Red color for "UI/UX Designer"
+    color: $error-color; // Red color for "UI/UX Designer"
   }
 }

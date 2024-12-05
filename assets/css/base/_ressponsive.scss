@@ -1,33 +1,35 @@
-
-
-
-/* Small screens (≥576px) */
-// @media only screen and (max-width: 576px) {
- 
-// }
-/* Medium screens (767px) */
-
-@media only screen and (max-width: 767px) {
- 
+@mixin x-small {
+	@media (max-width: $grid_breakpoint_xs) {
+		@content;
+	}
 }
 
-/* Medium screens (≥768px) */
-@media only screen and (min-width: 768px) {
- 
+@mixin small {
+	@media (max-width: $grid_breakpoint_sm) {
+		@content;
+	}
 }
 
-/* Large screens (≥992px) */
-@media only screen and (min-width: 992px) {
-  
+@mixin medium {
+	@media (max-width: $grid_breakpoint_md) {
+		@content;
+	}
 }
 
-/* Extra large screens (≥1200px) */
-@media only screen and (min-width: 1200px) {
-  
+@mixin large {
+	@media (max-width: $grid_breakpoint_lg) {
+		@content;
+	}
 }
 
-/* Extra extra large screens (≥1400px) */
-@media only screen and (min-width: 1400px) {
-  
+@mixin x-large {
+	@media (max-width: $grid_breakpoint_xl) {
+		@content;
+	}
+}
 
+@mixin xx-large {
+	@media (max-width: $grid_breakpoint_xxl) {
+		@content;
+	}
 }

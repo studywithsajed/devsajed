@@ -1,36 +1,89 @@
-/* Margin & Padding */
+/* Margin & Padding Utilities */
 
-@for $i from 1 through 10{
-    .mt-#{$i * 10} {
-        margin-top: 10px * $i;
-    }
+$spacing-unit: 10px; // Base unit for spacing (equivalent to 0.25rem)
 
-    .mr-#{$i * 10} {
-        margin-right: 10px * $i;
-    }
+@for $i from 1 through 10 {
+  // Margin utilities
+  .m-#{$i} {
+    margin: $spacing-unit * $i;
+  }
 
-    .mb-#{$i * 10} {
-        margin-bottom: 10px * $i;
-    }
+  .mx-#{$i} {
+    margin-left: $spacing-unit * $i;
+    margin-right: $spacing-unit * $i;
+  }
 
-    .ml-#{$i * 10} {
-        margin-left: 10px * $i;
-    }
-    
+  .my-#{$i} {
+    margin-top: $spacing-unit * $i;
+    margin-bottom: $spacing-unit * $i;
+  }
+  .mt-#{auto} {
+    margin-top:auto;
+  }
+  .mb-#{auto} {
+    margin-bottom:auto;
+  }
+  .ml-#{auto} {
+    margin-left:auto;
+  }
+  .mr-#{auto} {
+    margin-right:auto;
+  }
+  .mt-#{$i} {
+    margin-top: $spacing-unit * $i;
+  }
 
-    .pt-#{$i * 10} {
-        padding-top: 10px * $i;
-    }
+  .mr-#{$i} {
+    margin-right: $spacing-unit * $i;
+  }
 
-    .pr-#{$i * 10} {
-        padding-right: 10px * $i;
-    }
+  .mb-#{$i} {
+    margin-bottom: $spacing-unit * $i;
+  }
 
-    .pb-#{$i * 10} {
-        padding-bottom: 10px * $i;
-    }
+  .ml-#{$i} {
+    margin-left: $spacing-unit * $i;
+  }
 
-    .pl-#{$i * 10} {
-        padding-left: 10px * $i;
-    }
+  // Padding utilities
+  .p-#{$i} {
+    padding: $spacing-unit * $i;
+  }
+  .px-#{$i} {
+    padding-left: $spacing-unit * $i;
+    padding-right: $spacing-unit * $i;
+
+  }
+  .py-#{$i} {
+    padding-top: $spacing-unit * $i;
+    padding-bottom: $spacing-unit * $i;
+
+  }
+  .pt-#{auto} {
+    padding-top: auto ;
+  }
+  .pb-#{auto} {
+    padding-bottom: auto ;
+  }
+  .pl-#{auto} {
+    padding-left: auto ;
+  }
+  .pr-#{auto} {
+    padding-right: auto ;
+  }
+  .pt-#{$i} {
+    padding-top: $spacing-unit * $i;
+  }
+
+  .pr-#{$i} {
+    padding-right: $spacing-unit * $i;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $spacing-unit * $i;
+  }
+
+  .pl-#{$i} {
+    padding-left: $spacing-unit * $i;
+  }
 }

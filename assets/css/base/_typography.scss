@@ -8,83 +8,29 @@ body{
     color: #333;
 }
 
+// Font Weights
 $weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 
 @each $weight in $weights {
-    .fw-#{$weight} {
-        font-weight: $weight;
-    }
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
 }
 
+// Text Transform
 $transforms: uppercase, lowercase, capitalize;
 
 @each $transform in $transforms {
-    .text-#{$transform} {
-        text-transform: $transform;
-    }
+  .text-#{$transform} {
+    text-transform: $transform;
+  }
 }
 
+// Text Align
 $aligns: left, center, right, justify;
 
 @each $align in $aligns {
-    .text-#{$align} {
-        text-align: $align;
-    }
-}
-
-$flexs: flex, inline-flex;
-
-@each $flex in $flexs {
-    .d-#{$flex} {
-        display: $flex;
-    }
-}
-
-$directions: row, row-reverse, column, column-reverse;
-
-@each $direction in $directions {
-    .flex-#{$direction} {
-        flex-direction: $direction;
-    }
-}
-
-$justifys: flex-start, center, flex-end, space-between, space-around, space-evenly;
-
-@each $justify in $justifys {
-    .justify-#{$justify} {
-        justify-content: $justify;
-    }
-}
-
-$aligns: flex-start, center, flex-end, space-between, space-around, space-evenly;
-
-@each $align in $aligns {
-    .align-#{$align} {
-        align-content: $align;
-    }
-}
-
-$wraps: nowrap, wrap, wrap-reverse;
-
-@each $wrap in $wraps {
-    .flex-#{$wrap} {
-        flex-wrap: $wrap;
-    }
-}
-
-
-$aligns1: flex-start, center, flex-end;
-
-@each $align1 in $aligns1 {
-    .align-#{$align1} {
-        align-items: $align1;
-    }
-}
-
-$positions: fixed, static, relative, absolute;
-
-@each $position in $positions {
-    .position-#{$position} {
-        position: $position;
-    }
+  .text-#{$align} {
+    text-align: $align;
+  }
 }

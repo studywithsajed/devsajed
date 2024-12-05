@@ -1,13 +1,16 @@
 .header-area {
+  position: fixed;
   width: 300px;
+  height: 100vh;
+  overflow-y: scroll;
   background: #000;
   padding-top: 30px;
   padding-left: 13px;
   display: none;
   visibility: hidden;
   opacity: 0;
-  transition: .3s ease-in-out;
-  transform: translateX(-115%);
+  transition: 0.3s ease-in-out;
+  transform: translateX(-105%);
   z-index: 99;
   .profile-img {
     text-align: center;
@@ -15,7 +18,7 @@
       width: 100px;
       border-radius: 50%;
       padding: 5px;
-      background: #333;
+      background: $heading-color;
     }
   }
 
@@ -25,7 +28,7 @@
     h4 {
       a {
         display: inline-block;
-        color: #fff;
+        color: $section-background;
         font-size: 27px;
         line-height: 37px;
         font-style: italic;
@@ -34,7 +37,7 @@
     }
     span {
       display: block;
-      color: #ddd;
+      color:$section-background;
     }
   }
 
@@ -44,12 +47,12 @@
       padding: 10px;
       text-align: center;
       margin: 0 5px;
-      background: #333;
-      color: #fff;
+      background: $heading-color;
+      color: $section-background;
       border-radius: 50%;
       font-size: 18px;
       &:hover {
-        background: #149ddd;
+        background: $primary-color;
       }
     }
   }
@@ -64,9 +67,9 @@
           font-size: 14px;
           margin: 15px 0;
           &:hover {
-            color: #fff;
+            color: $section-background;
             i {
-              color: #149ddd;
+              color: $primary-color;
             }
           }
           i {
@@ -77,23 +80,30 @@
       }
     }
   }
-  &.active{
+  &.active {
     display: block;
     visibility: visible;
     opacity: 1;
-    transform: translateX(-15%);
+    transform: translateX(0);
+  }
+  @include small {
+    width: 80%;
+    z-index: 9;
+    height: 100vh;
+    padding: 5px 25px;
   }
 }
 
-
 .toggle-bar {
-  background: #149ddd;
+  background: $primary-color;
   padding: 12px;
-  color: #fff;
+  color: $section-background;
   border-radius: 50%;
   cursor: pointer;
   margin-top: 23px;
   z-index: 1000;
+  right: 30px;
+  top: 0;
   .bars-btn {
     display: block;
   }
@@ -110,5 +120,13 @@
     .cross-btn {
       display: block;
     }
+  }
+
+  @include small {
+    position: fixed;
+    z-index: 9999;
+  }
+  &:hover {
+    background-color: $link-hover-color;
   }
 }

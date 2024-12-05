@@ -1,0 +1,87 @@
+
+// About Area
+.about-area {
+  // Section Title
+  .section-title {
+    h4 {
+      font-size: $font-size-heading;
+      line-height: $line-height-heading;
+      font-weight: $font-weight-bold;
+      color: $text-color;
+      padding-bottom: 15px;
+    }
+
+    p {
+      color: $text-color;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;
+    }
+
+    .divider {
+      background: $primary-color;
+      width: 50px;
+      height: 3px;
+    }
+  }
+
+  // About Image
+  .about-img {
+    .about-btn {
+      display: inline-block;
+      padding: 5px 16px;
+      margin: 34px 0;
+      background: $text-color;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      color: $section-background;
+      font-size: 14px;
+      &:hover {
+        border: 1px solid $text-color;
+        background: transparent;
+        color: $text-color;
+        font-weight: 600;
+      }
+      
+    }
+    img {
+      border-radius: 13px;
+      border: 7px solid $secondary-color;
+    }
+  }
+
+  // About Content
+  .about-content {
+    h2,
+    h3 {
+      color: $text-color;
+    }
+    p {
+      padding: 10px 0;
+    }
+    // Personal Details Table
+    .personal-details {
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+
+        th,
+        td {
+          border: 1px solid $secondary-color;
+          padding: 10px;
+          text-align: left;
+
+          i {
+            color: $primary-color;
+            margin-right: 12px;
+          }
+        }
+
+        th {
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,32 @@
 
 // Colors
-$tomato: #e74c3c;
+// Primary Colors
+$primary-color: #149ddd;        // Main brand color (e.g., blue)
+$secondary-color: #ddd;         // Light gray color (for borders, dividers, etc.)
+$highlight-color: #ff6f61;      // Accent color (e.g., coral/red)
+
+// Text Colors
+$text-color: #000;              // Default text color (black)
+$heading-color: #333;           // Darker color for headings
+$link-color: $primary-color;    // Link color, typically matches primary color
+$link-hover-color: #007bff;     // Link hover color (slightly darker blue)
+
+// Background Colors
+$background-color: #f8f8f8;    // Page background color (light gray)
+$section-background: #ffffff;   // Background color for sections (white)
+
+
+
+
+// Misc Colors
+$success-color: #28a745;        // Success state color (green)
+$error-color: #dc3545;          // Error state color (red)
+$warning-color: #ffc107;        // Warning state color (yellow)
+$info-color: #17a2b8;           // Info state color (light blue)
+$light-color: #f8f9fa;          // Light background color (for cards, etc.)
+$dark-color: #343a40;           // Dark color for headings or text
+
+// font variables 
+$font-weight-bold: 600;
+$font-size-heading: 35px;
+$line-height-heading: 42px;
