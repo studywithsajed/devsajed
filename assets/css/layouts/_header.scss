@@ -37,7 +37,7 @@
     }
     span {
       display: block;
-      color:$section-background;
+      color: $section-background;
     }
   }
 
@@ -124,7 +124,8 @@
 
   @include small {
     position: fixed;
-    z-index: 9999;
+    z-index: 99;
+    right: 30px;
   }
   &:hover {
     background-color: $link-hover-color;
