@@ -1,4 +1,4 @@
-
+ @import '../base/varriables';
 // About Area
 .about-area {
   // Section Title
@@ -31,18 +31,17 @@
       display: inline-block;
       padding: 5px 16px;
       margin: 34px 0;
-      background: $text-color;
+      background: $primary-color;
       border: 1px solid transparent;
       border-radius: 3px;
       color: $section-background;
       font-size: 14px;
       &:hover {
-        border: 1px solid $text-color;
+        border: 1px solid $link-hover-color;
         background: transparent;
-        color: $text-color;
+        color: $link-hover-color;
         font-weight: 600;
       }
-      
     }
     img {
       border-radius: 13px;
@@ -60,26 +59,48 @@
       padding: 10px 0;
     }
     // Personal Details Table
-    .personal-details {
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
+    .profile-card {
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid $secondary-color;
+      border-radius: 8px;
+      background: $section-background;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-        th,
-        td {
-          border: 1px solid $secondary-color;
-          padding: 10px;
-          text-align: left;
+      .profile-header {
+        text-align: center;
+        margin-bottom: 20px;
 
-          i {
-            color: $primary-color;
-            margin-right: 12px;
-          }
+        h2 {
+          font-size: 1.5rem;
+          color: $heading-color;
         }
+      }
 
-        th {
-          background-color: $secondary-color;
+      .profile-content {
+        .profile-item {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          padding-bottom: 5px;
+          border-bottom: 1px dashed $secondary-color;
+
+          strong {
+            font-weight: 600;
+            color: $heading-color;
+          }
+
+          span {
+            color: $heading-color;
+            a {
+              color:$link-hover-color;
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
         }
       }
     }

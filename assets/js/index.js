@@ -98,3 +98,78 @@ document.addEventListener("DOMContentLoaded", function() {
   // Start typing effect
   typeWriter();
 });
+
+
+//  progress bar 
+document.addEventListener("DOMContentLoaded", function () {
+  // Define the progress bars and target percentages
+  const progressBars = [
+    { id: 'progress-1', percentage: 80, skill: 'HTML' },
+    { id: 'progress-2', percentage: 55, skill: 'CSS' },
+    { id: 'progress-3', percentage: 25, skill: 'JavaScript' },
+    { id: 'progress-5', percentage: 60, skill: 'WordPress' }
+  ];
+
+  let currentProgress = 0;
+
+  function updateProgressBar(progressBar, percentage) {
+    const barElement = document.getElementById(progressBar.id);
+    barElement.style.width = percentage + '%';
+    barElement.textContent = percentage + '%';
+  }
+
+  function animateProgressBars() {
+    if (currentProgress < progressBars.length) {
+      let progressBar = progressBars[currentProgress];
+      let currentPercentage = 0;
+
+      // Animate progress bar from 0 to the target percentage
+      let interval = setInterval(() => {
+        if (currentPercentage <= progressBar.percentage) {
+          updateProgressBar(progressBar, currentPercentage);
+          currentPercentage++;
+        } else {
+          clearInterval(interval);
+          // Move to the next progress bar after 1 second
+          setTimeout(() => {
+            currentProgress++;
+            animateProgressBars();
+          }, 1000);
+        }
+      }, 50); // Progress increase speed (in milliseconds)
+    } else {
+      // Loop back to the first progress bar after completing the cycle
+      setTimeout(() => {
+        currentProgress = 0;
+        animateProgressBars();
+      }, 1000);
+    }
+  }
+
+  // Start the animation
+  animateProgressBars();
+});
+
+
+// Isotope for filtering portfolio items
+// Initialize Isotope
+document.addEventListener('DOMContentLoaded', function () {
+  var grid = document.querySelector('.filltering');
+  var iso = new Isotope(grid, {
+    itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows',
+  });
+
+  // Filter items on button click
+  var filters = document.querySelectorAll('.controls .btn');
+  filters.forEach((filter) =>
+    filter.addEventListener('click', function () {
+      var filterValue = this.getAttribute('data-filter');
+      iso.arrange({ filter: filterValue });
+
+      // Update active button
+      filters.forEach((btn) => btn.classList.remove('active'));
+      this.classList.add('active');
+    })
+  );
+});

@@ -37,6 +37,9 @@
 
   <!-- Font-awesome Link Here  -->
   <link rel="stylesheet" href="assets/css/plugins/font-awesome/css/fontawsome.min.css">
+
+  <!-- <link href="assets/css/glightbox.min.css" rel="stylesheet"> -->
+
   <!-- Main Css link Here  -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -73,17 +76,16 @@
       </div>
       <nav class="navbar" id="navbar">
         <ul>
-          <li><a class="mt-10 text-capitalize" href="#"><i class="mr-10 fa-solid fa-house"></i>home</a></li>
-          <li><a class="mt-10 text-capitalize" href="#"><i class="mr-10 fa-solid fa-user"></i>about</a></li>
+          <li><a class="mt-10 text-capitalize" href="#header"><i class="mr-10 fa-solid fa-house"></i>home</a></li>
+          <li><a class="mt-10 text-capitalize" href="#about"><i class="mr-10 fa-solid fa-user"></i>about</a></li>
           <li><a class="mt-10 text-capitalize" href="#"><i class="mr-10 fa-solid fa-file"></i>portfolio</a></li>
           <li><a class="mt-10 text-capitalize" href="#"><i class="mr-10 fa-solid fa-image"></i>services</a></li>
-          <li><a class="mt-10 text-capitalize" href="#"><i class="mr-10 fa-solid fa-image"></i> portfolio</a></li>
           <li><a class="mt-10 text-capitalize" href="#"><i class="mr-10 fa-solid fa-envelope"></i>contact</a></li>
         </ul>
       </nav>
-    
+
     </div>
-    
+
   </header>
 
   <!-- /Header Area  -->
@@ -107,7 +109,7 @@
     <!-- /Banner Area  -->
 
     <!-- About Area  -->
-    <section class="about-area py-5" id="about">
+    <section class="about-area py-3" id="about">
       <div class="container">
         <div class="section-title py-3">
           <h4 class="text-capitalize ">about us</h4>
@@ -136,47 +138,33 @@
                 functionality.
                 With a passion for innovation, I bring ideas to life through clean code and creative solutions.
               </p>
+              <div class="profile-card">
+                <div class="profile-header">
+                  <h3>Personal Details</h3>
+                </div>
+                <div class="profile-content">
 
-              <h3>Personal Details</h3>
-              <div class="personal-details">
-                <table>
-                  <tr>
-                    <th>Detail</th>
-                    <th>Information</th>
-                  </tr>
-                  <tr>
-                    <td><i class="fa-solid fa-angle-right"></i>Birthday</td>
-                    <td>April 03, 2003</td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa-solid fa-angle-right"></i>Website</td>
-                    <td><a href="https://studywithsajed.github.io/devsajed/" target="_blank">www.devsajed.com</a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa-solid fa-angle-right"></i>Phone</td>
-                    <td>+888 01756 87 8965</td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa-solid fa-angle-right"></i>City</td>
-                    <td>Sylhet, Bangladesh</td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa-solid fa-angle-right"></i>Age</td>
-                    <td>21</td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa-solid fa-angle-right"></i>Degree</td>
-                    <td>BA</td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa-solid fa-angle-right"></i>Email</td>
-                    <td><a href="mailto:sajedislam019@gmail.com">sajedislam019@gmail.com</a></td>
-                  </tr>
-                  <tr>
-                    <td><i class="fa-solid fa-angle-right"></i>Freelance</td>
-                    <td>Available</td>
-                  </tr>
-                </table>
+                  <div class="profile-item">
+                    <strong>Website:</strong>
+                    <span><a href="#" target="_blank">www.devsajed.com</a></span>
+                  </div>
+                  <div class="profile-item">
+                    <strong>Phone:</strong>
+                    <span>+888 017 5687 8965</span>
+                  </div>
+                  <div class="profile-item">
+                    <strong>City:</strong>
+                    <span>Sylhet, Banladesh</span>
+                  </div>
+                  <div class="profile-item">
+                    <strong>Email:</strong>
+                    <span><a href="mailto:email@example.com">email@example.com</a></span>
+                  </div>
+                  <div class="profile-item">
+                    <strong>Freelance:</strong>
+                    <span>Available</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -188,16 +176,195 @@
     <!-- /About Area  -->
 
     <!-- Skill Area  -->
-    <section class="skill-area py-5">
+    <section class="skill-area py-3">
       <div class="container">
-        <div class="section-title ">
-          <h4 class="text-capitalize ">about us</h4>
-          <div class="divider  "></div>
-          <p></p>
+        <div class="section-title py-3">
+          <h4 class="text-capitalize ">skill</h4>
+          <div class="divider"></div>
+        </div>
+        <div class="row ">
+          <div class="col-12 col-sm-12 col-md-8">
+            <div class="skills mt-1">
+              <h3>Skill Progress Bars</h3>
+
+              <!-- Skill 1: HTML -->
+              <div class="progress-wrapper mb-3">
+                <div class="skill-name">HTML</div>
+                <div class="progress">
+                  <div class="progress-bar primary" id="progress-1">80%</div>
+                </div>
+              </div>
+
+              <!-- Skill 2: CSS -->
+              <div class="progress-wrapper mb-3">
+                <div class="skill-name">CSS</div>
+                <div class="progress">
+                  <div class="progress-bar success" id="progress-2">55%</div>
+                </div>
+              </div>
+
+              <!-- Skill 3: JavaScript -->
+              <div class="progress-wrapper mb-3">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress">
+                  <div class="progress-bar info" id="progress-3">25%</div>
+                </div>
+              </div>
+
+
+
+              <!-- Skill 5: WordPress -->
+              <div class="progress-wrapper mb-3">
+                <div class="skill-name">WordPress</div>
+                <div class="progress">
+                  <div class="progress-bar danger" id="progress-5">60%</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 pt-2">
+            <div class="skill-tools">
+              <h3 class="text-capitalize fw-700">what tools i use</h3>
+              <ul class="tool-icon d-flex flex-wrap">
+                <li>
+                  <img src="assets/img/tools/html.png" alt="html icon">
+                </li>
+                <li>
+                  <img src="assets/img/tools/css-3.png" alt="css icon">
+                </li>
+                <li>
+                  <img src="assets/img/tools/js.png" alt="javascript icon">
+                </li>
+                <li>
+                  <img src="assets/img/tools/wordpress-logo.png" alt="wordpress icon">
+                </li>
+                <li>
+                  <img src="assets/img/tools/sass.png" alt="sass icon">
+                </li>
+                <li>
+                  <img src="assets/img/tools/illustrator.png" alt="illustrator icon">
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- /Skill Area  -->
+
+
+    <!-- Portfolio Section -->
+    <div class="portfolio-area">
+      <div class="container">
+        <div class="row ">
+          <div class="col-sm-12">
+            <div class="controls text-center mb-4">
+              <button data-filter="*" class="btn btn-primary">All</button>
+              <button data-filter=".frontend" class="btn btn-secondary">Frontend</button>
+              <button data-filter=".backend" class="btn btn-secondary">Backend</button>
+              <button data-filter=".fullstack" class="btn btn-secondary">Fullstack</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row filltering">
+
+          <!--Frontend Card 1 -->
+          <div class="col-md-4 portfolio-item frontend">
+            <div class="portfolio-card">
+              <img src="assets/img/frontend-file/novena-hospital.png" alt="novena-hospital">
+              <div class="overlay">
+                <h3>Hospital Project</h3>
+                <a href="https://demo.themefisher.com/novena-bootstrap/index.html" target="_blank" class="icon-link">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 portfolio-item frontend">
+            <div class="portfolio-card">
+              <img src="assets/img/branding-3.jpg" alt="Frontend Project">
+              <div class="overlay">
+                <h3>Frontend Project</h3>
+                <a href="frontend-project.html" target="_blank" class="icon-link">🔗</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 portfolio-item frontend">
+            <div class="portfolio-card">
+              <img src="assets/img/branding-3.jpg" alt="Frontend Project">
+              <div class="overlay">
+                <h3>Frontend Project</h3>
+                <a href="frontend-project.html" target="_blank" class="icon-link">🔗</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 portfolio-item frontend">
+            <div class="portfolio-card">
+              <img src="assets/img/branding-3.jpg" alt="Frontend Project">
+              <div class="overlay">
+                <h3>Frontend Project</h3>
+                <a href="frontend-project.html" target="_blank" class="icon-link">🔗</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 portfolio-item frontend">
+            <div class="portfolio-card">
+              <img src="assets/img/branding-3.jpg" alt="Frontend Project">
+              <div class="overlay">
+                <h3>Frontend Project</h3>
+                <a href="frontend-project.html" target="_blank" class="icon-link">🔗</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 portfolio-item frontend">
+            <div class="portfolio-card">
+              <img src="assets/img/branding-3.jpg" alt="Frontend Project">
+              <div class="overlay">
+                <h3>Frontend Project</h3>
+                <a href="frontend-project.html" target="_blank" class="icon-link">🔗</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 portfolio-item frontend">
+            <div class="portfolio-card">
+              <img src="assets/img/branding-3.jpg" alt="Frontend Project">
+              <div class="overlay">
+                <h3>Frontend Project</h3>
+                <a href="frontend-project.html" target="_blank" class="icon-link">🔗</a>
+              </div>
+            </div>
+          </div>
+          <!--/Frontend Card 2 -->
+          <div class="col-md-4 portfolio-item backend">
+            <div class="portfolio-card">
+              <img src="assets/img/books-3.jpg" alt="Backend Project">
+              <div class="overlay">
+                <h3>Backend Project</h3>
+                <a href="backend-project.html" target="_blank" class="icon-link">🔗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4 portfolio-item fullstack">
+            <div class="portfolio-card">
+              <img src="fullstack-project.jpg" alt="Fullstack Project">
+              <div class="overlay">
+                <h3>Fullstack Project</h3>
+                <a href="fullstack-project.html" target="_blank" class="icon-link">🔗</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- /Portfolio Section -->
 
   </main>
   <!-- /Main Area  -->
@@ -208,7 +375,14 @@
   </button>
   <!-- /Scroll Top  -->
 
- 
+
+
+  <!-- GLightbox -->
+  <script src="assets/js/glightbox.min.js"></script>
+
+  <!-- Isotope -->
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+
   <!-- Main js  -->
   <script src="assets/js/index.js"></script>
 </body>
